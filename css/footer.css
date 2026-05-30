@@ -1,11 +1,18 @@
 .footer {
     background-color: #2e2f42;
     color: #ffffff;
-    padding: 100px 0;
-    
+    padding: 96px 0;  
 }
+
+@media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+}
+
+
 .logo {
-    margin-right: 120px;
+
     line-height: 1.33;
     letter-spacing: 0.03em;
     font-size: 24px;
@@ -36,26 +43,51 @@
    flex-direction: column;
     gap: 72px;
     align-items: center;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
+
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
+
         align-items: baseline;
-        gap: 72px 24px;
+        text-align: left;
+
+        max-width: 584px;
+        margin: 0 auto;
+    }
+
+    .footer-logo-box {
+        margin-right: 24px;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-form input {
+        width: 264px;
     }
 }
-
 @media screen and (min-width: 1158px) {
-    .footer-container {
-        flex-wrap: nowrap;
-        gap: 0;
-    }
-}
 
-.footer-logo-box {
-    margin-right: 120px;
+    .footer-container {
+        max-width: 1158px;
+
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
+    .footer-logo-box {
+        margin-right: 120px;
+    }
+
+    .footer-form {
+        margin-left: auto;
+    }
 }
 
 .social-list {
@@ -88,11 +120,12 @@
 }
 
 .footer-form {
-    margin-left: auto;
+   width: 100%;
 }
 
 .footer-form input {
-    width: 264px;
+    width: 100%;
+    max-width: 288px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #fff;
@@ -120,6 +153,7 @@
     font-weight: 500;
     cursor: pointer;
     padding: 8px 24px 8px 24px;
+    margin: 0 auto;
 }
 
 
@@ -163,7 +197,9 @@
 
 .subscribe-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
+    alingn-items: center;
 }
 .social {
     width: 40px;
