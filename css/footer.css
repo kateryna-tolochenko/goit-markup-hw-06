@@ -41,9 +41,9 @@
 .footer-container {
     display: flex;
    flex-direction: column;
-    gap: 72px;
+    gap: 24px;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,7 +125,6 @@
 
 .footer-form input {
     width: 100%;
-    max-width: 288px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #fff;
@@ -199,7 +198,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    alingn-items: center;
+   
 }
 .social {
     width: 40px;
