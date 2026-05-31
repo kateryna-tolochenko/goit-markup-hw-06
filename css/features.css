@@ -20,7 +20,7 @@
     .features-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px 72px;
+        gap: 72px 24px;
     }
 
     .features-item {
