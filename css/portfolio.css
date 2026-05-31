@@ -1,6 +1,5 @@
 .portfolio {
     padding: 96px 0;
-    flex-basis: 264px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -16,6 +15,12 @@
         
 }
 
+.portfolio-item {
+    flex-shrink: 1;
+    gap: 24px;
+    width: 100%;
+
+}
 @media screen and (min-width: 768px) {
     .portfolio-list {
         flex-direction: row;
@@ -36,15 +41,10 @@
 .portfolio-list {
     row-gap: 48px;   
 
-}
+    }
 }
 
-.portfolio-item {
-    flex-shrink: 1; 
-    gap: 24px;
-    width: 100%;
-  
-}
+
 
 .portfolio-content {
     padding: 32px 16px;
