@@ -70,6 +70,7 @@
 
     .footer-form input {
         width: 264px;
+        margin-bottom: 0;
     }
 }
 @media screen and (min-width: 1158px) {
@@ -80,6 +81,7 @@
         flex-wrap: nowrap;
         align-items: baseline;
         gap: 0;
+        column-gap: 120px;
     }
 
 
@@ -170,10 +172,15 @@
 
     line-height: 1.5;
     letter-spacing: 0.02em;
-
+     text-align: center;
     color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+    .subscribe-title {
+        text-align: left;
+    }
+}
 
 .footer-form button:hover,
 .footer-form button:focus {
